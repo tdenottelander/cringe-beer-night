@@ -139,15 +139,13 @@ export const GAMES: Game[] = [
     emoji: '👀',
     image: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301970/capsule_616x353.jpg?t=1747870310',
     description:
-      'Iedereen is onzichtbaar — de enige manier om je tegenstanders te vinden is door op hun scherm te gluren. ' +
-      'Screen-kijken is niet vals spelen, het ís het spelletje.',
+      'Iedereen is onzichtbaar — de enige manier om je tegenstanders te vinden is door op hun scherm te gluren. '
+    + ' We spelen in teams (2v2). Iedereen komt 2 keer aan de beurt.',
     scoreSections: [
       {
         rows: [
-          { label: '🥇 1e plaats', aura: 50, highlight: true },
-          { label: '🥈 2e plaats', aura: 25 },
-          { label: '🥉 3e plaats', aura: -10, negative: true },
-          { label: '4e plaats', aura: 0 },
+          { label: '🥇 Per win als team', aura: 50, highlight: true },
+          { label: '🥈 Per verlies als team', aura: 5 },
         ],
       },
     ],
