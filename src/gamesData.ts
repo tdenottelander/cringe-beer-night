@@ -135,14 +135,20 @@ export const GAMES: Game[] = [
   },
   {
     id: 6,
-    title: 'Karen Round',
-    emoji: '💅',
+    title: 'ScreenCheat',
+    emoji: '👀',
+    image: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301970/capsule_616x353.jpg?t=1747870310',
     description:
-      'Je ziet het begin van een Karen in het wild. Bedenk met je team hoe het filmpje eindigt. ' +
-      'Elk goed antwoord levert aura op voor jouw team.',
+      'Iedereen is onzichtbaar — de enige manier om je tegenstanders te vinden is door op hun scherm te gluren. ' +
+      'Screen-kijken is niet vals spelen, het ís het spelletje.',
     scoreSections: [
       {
-        rows: [{ label: 'Per goed antwoord', aura: 10, highlight: true }],
+        rows: [
+          { label: '🥇 1e plaats', aura: 50, highlight: true },
+          { label: '🥈 2e plaats', aura: 25 },
+          { label: '🥉 3e plaats', aura: -10, negative: true },
+          { label: '4e plaats', aura: 0 },
+        ],
       },
     ],
   },
