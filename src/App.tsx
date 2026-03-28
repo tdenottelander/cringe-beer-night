@@ -119,12 +119,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0502] font-sans selection:bg-pink-900/30 overflow-x-hidden text-white">
+    <div className="min-h-screen bg-[#3d0a28] font-sans selection:bg-pink-900/30 overflow-x-hidden text-white">
       {/* Background Decoration */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-pink-900/20 blur-[120px] rounded-full" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/10 blur-[120px] rounded-full" />
-        <div className="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-yellow-900/20 blur-[120px] rounded-full" />
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-pink-700/40 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-fuchsia-800/30 blur-[120px] rounded-full" />
+        <div className="absolute top-[20%] right-[10%] w-[35%] h-[35%] bg-pink-500/20 blur-[120px] rounded-full" />
       </div>
 
       {/* Header */}
