@@ -124,4 +124,34 @@ export const GEKKIE_GAME_DATA: GekkieGameItem[] = [
     videoUrl: a("/gekkies/20_Yordi.mp4"),
     title: "Yordi"
   },
+  {
+    id: 21,
+    screenshotUrl: a("/gekkies/030.png"),
+    videoUrl: a("/gekkies/030.mp4"),
+    title: "030"
+  },
+  {
+    id: 22,
+    screenshotUrl: a("/gekkies/broodje beleg.png"),
+    videoUrl: a("/gekkies/broodje beleg.mp4"),
+    title: "Broodje beleg"
+  },
+  {
+    id: 23,
+    screenshotUrl: a("/gekkies/huisbaas bob.png"),
+    videoUrl: a("/gekkies/huisbaas bob.mp4"),
+    title: "Huisbaas Bob"
+  },
+  {
+    id: 24,
+    screenshotUrl: a("/gekkies/no money.png"),
+    videoUrl: a("/gekkies/no money.mp4"),
+    title: "No Money"
+  },
+  {
+    id: 25,
+    screenshotUrl: a("/gekkies/ik wil kaas.png"),
+    videoUrl: a("/gekkies/ik wil kaas.mp4"),
+    title: "Ik wil kaas"
+  },
 ];
