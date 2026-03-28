@@ -1,0 +1,242 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="1c1bd8c9-c736-3c84-9211-9df8fe55c491" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AccessStaticViaInstance" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="Annotator" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AssertMessageNotString" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToForLoopParameter" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_checkForeachParameters" value="false" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToSuperclassField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="BooleanMethodIsAlwaysInverted" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="BooleanParameter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ChainedEquality" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassComplexity" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_limit" value="80" />
+    </inspection_tool>
+    <inspection_tool class="ClassCoupling" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_includeJavaClasses" value="false" />
+      <option name="m_includeLibraryClasses" value="false" />
+      <option name="m_limit" value="15" />
+    </inspection_tool>
+    <inspection_tool class="ClassNameDiffersFromFileName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassReferencesSubclass" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassWithOnlyPrivateConstructors" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloneCallsSuperClone" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CloneDeclaresCloneNotSupported" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ControlFlowStatementWithoutBraces" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CyclomaticComplexity" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_limit" value="10" />
+    </inspection_tool>
+    <inspection_tool class="DefaultNotLastCaseInSwitch" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Deprecation" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="IGNORE_ABSTRACT_DEPRECATED_OVERRIDES" value="false" />
+      <option name="IGNORE_IMPORT_STATEMENTS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="DuplicateBooleanBranch" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="EmptyClass" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="ignoreClassWithParameterization" value="false" />
+      <option name="ignoreThrowables" value="true" />
+      <option name="commentsAreContent" value="true" />
+    </inspection_tool>
+    <inspection_tool class="EmptyMethod" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="EXCLUDE_ANNOS">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+      <option name="commentsAreContent" value="true" />
+    </inspection_tool>
+    <inspection_tool class="EnumSwitchStatementWhichMissesCases" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreSwitchStatementsWithDefault" value="true" />
+    </inspection_tool>
+    <inspection_tool class="FieldCanBeLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="EXCLUDE_ANNOS">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="com.fasterxml.jackson.annotation.JsonProperty" />
+          </list>
+        </value>
+      </option>
+      <option name="IGNORE_FIELDS_USED_IN_MULTIPLE_METHODS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="FieldNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <extension name="ConstantNamingConvention" enabled="true">
+        <option name="m_regex" value="[A-Z][A-Z_\d]*" />
+        <option name="m_minLength" value="2" />
+        <option name="m_maxLength" value="40" />
+      </extension>
+      <extension name="ConstantWithMutableFieldTypeNamingConvention" enabled="true">
+        <option name="m_regex" value="[A-Z][A-Z_\d]*" />
+        <option name="m_minLength" value="2" />
+        <option name="m_maxLength" value="40" />
+      </extension>
+      <extension name="EnumeratedConstantNamingConvention" enabled="true">
+        <option name="m_regex" value="[A-Z][A-Z_\d]*" />
+        <option name="m_minLength" value="2" />
+        <option name="m_maxLength" value="40" />
+      </extension>
+      <extension name="InstanceVariableNamingConvention" enabled="true">
+        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_minLength" value="2" />
+        <option name="m_maxLength" value="40" />
+      </extension>
+      <extension name="StaticVariableNamingConvention" enabled="true">
+        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_minLength" value="2" />
+        <option name="m_maxLength" value="40" />
+      </extension>
+    </inspection_tool>
+    <inspection_tool class="GroovyConstantNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[A-Z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyInstanceMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyInstanceVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="m_[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyLocalVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyStaticMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="GroovyStaticVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="s_[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="32" />
+    </inspection_tool>
+    <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceofThis" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InterfaceMayBeAnnotatedFunctional" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="LiteralAsArgToStringEquals" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="LocalCanBeFinal" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="REPORT_VARIABLES" value="true" />
+      <option name="REPORT_PARAMETERS" value="true" />
+    </inspection_tool>
+    <inspection_tool class="LocalVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="40" />
+    </inspection_tool>
+    <inspection_tool class="LongLine" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WARNING" enabled="false">
+        <option name="ignoreInitialCapacity" value="true" />
+      </scope>
+      <option name="ignoreInitialCapacity" value="true" />
+    </inspection_tool>
+    <inspection_tool class="MalformedSetUpTearDown" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MarkerInterface" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MissingDeprecatedAnnotation" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="warnOnMissingJavadoc" value="true" />
+    </inspection_tool>
+    <inspection_tool class="MissingOverrideAnnotation" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreObjectMethods" value="true" />
+      <option name="ignoreAnonymousClassMethods" value="false" />
+    </inspection_tool>
+    <inspection_tool class="MissortedModifiers" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_requireAnnotationsFirst" value="true" />
+    </inspection_tool>
+    <inspection_tool class="NestedAssignment" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NewClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <extension name="AbstractClassNamingConvention" enabled="true" />
+      <extension name="ClassNamingConvention" enabled="true" />
+      <extension name="EnumeratedClassNamingConvention" enabled="true" />
+      <extension name="InterfaceNamingConvention" enabled="true" />
+      <extension name="JUnitTestClassNamingConvention" enabled="true" />
+      <extension name="TypeParameterNamingConvention" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="NewGroovyClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <extension name="GroovyAbstractClassNamingConvention" enabled="true" />
+      <extension name="GroovyClassNamingConvention" enabled="true" />
+      <extension name="GroovyEnumerationNamingConvention" enabled="true" />
+      <extension name="GroovyInterfaceNamingConvention" enabled="true" />
+      <extension name="GroovyTypeParameterNamingConvention" enabled="true" />
+      <extension name="JUnitTestClassNamingConvention" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="NewMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonFinalFieldInEnum" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="40" />
+    </inspection_tool>
+    <inspection_tool class="PublicField" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreEnums" value="false" />
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+    </inspection_tool>
+    <inspection_tool class="RawTypeCanBeGeneric" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RedundantCast" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RedundantImplements" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreSerializable" value="false" />
+      <option name="ignoreCloneable" value="false" />
+    </inspection_tool>
+    <inspection_tool class="RedundantThrowsDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <replaceConfiguration name="enum" text="private $Enum$($ParameterType$ $Parameter$) {&#10;  $Statement$;&#10;}" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="member" reformatAccordingToStyle="true" shortenFQN="false" replacement="private $Enum$($ParameterType$ $Parameter$) {&#10;  $Statement$;&#10;}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="ParameterType" within="" contains="" />
+        <constraint name="Parameter" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="Statement" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="Enum" within="" contains="" />
+        <variableDefinition name="Enum" />
+      </replaceConfiguration>
+      <replaceConfiguration name="private accesss modifier for enumerations" description="private accesss modifier for enumerations" problemDescriptor="private accesss modifier for enumerations" text="$Constructor$ ($ParameterType$ $Parameter$) {&#10;    $calls$;&#10;}" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="member" reformatAccordingToStyle="true" shortenFQN="false" replacement="private $Constructor$ ($ParameterType$ $Parameter$) {&#10;    $calls$;&#10;}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="ParameterType" within="" contains="" />
+        <constraint name="Parameter" regexp="name" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="Constructor" script="&quot;Enum&quot;" within="" contains="" />
+        <constraint name="calls" within="" contains="" />
+      </replaceConfiguration>
+    </inspection_tool>
+    <inspection_tool class="SingleStatementInBlock" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="StringEqualsEmptyString" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SwitchStatementsWithoutDefault" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_ignoreFullyCoveredEnums" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryEnumModifier" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryFinalOnLocalVariableOrParameter" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessaryQualifierForThis" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessarySuperConstructor" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessarySuperQualifier" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreClarification" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryThis" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreAssignments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnusedImport" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="WeakerAccess" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="false" />
+      <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="false" />
+      <option name="SUGGEST_PRIVATE_FOR_INNERS" value="true" />
+      <disabledExtension id="junit" />
+      <disabledExtension id="moduleInfo" />
+    </inspection_tool>
+    <inspection_tool class="da45ec4b-e657-3774-808d-f9be683a4778" enabled="false" level="INFORMATION" enabled_by_default="false" />
+  </profile>
+</component>
