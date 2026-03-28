@@ -19,6 +19,7 @@ export interface Game {
   id: number;
   title: string;
   emoji: string;
+  image?: string; // optional image URL, shown instead of emoji
   description: string;
   teamNote?: string;
   challengeGroups?: ChallengeGroup[];
@@ -31,6 +32,7 @@ export const GAMES: Game[] = [
     id: 1,
     title: 'Internetgekkies',
     emoji: '📱',
+    image: 'https://i.ytimg.com/vi/-9SXtQqVp9Q/maxresdefault.jpg',
     description:
       'Kies een gekkie, en doe je beste voice-over van het filmpje. ' +
       'Iedere speler geeft je een score van 1-7 op drie categorieën: accuraatheid, grappigheid en cringe. ' +
@@ -54,6 +56,7 @@ export const GAMES: Game[] = [
     id: 2,
     title: 'Just Dance',
     emoji: '🕺',
+    image: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70070000028929/93dc6060a9dd96800995c66d7cc2bcb01949065ee12e7b49092544eda967f938',
     description:
       'Iedereen komt twee keer aan de beurt. Puntenverdeling hangt af van het aantal spelers dat tegelijk danst.',
     scoreSections: [
@@ -79,6 +82,7 @@ export const GAMES: Game[] = [
     id: 3,
     title: 'Drawful',
     emoji: '🎨',
+    image: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Drawful2_image1600w.jpg',
     description:
       'Teken zo goed (of slecht) als je kan en probeer de anderen te foppen. ' +
       'Eindscore bepaalt hoeveel aura je team krijgt.',
@@ -99,8 +103,23 @@ export const GAMES: Game[] = [
   },
   {
     id: 4,
+    title: 'Koekkwakken',
+    emoji: '🍪',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Roze_koek.jpg/330px-Roze_koek.jpg',
+    description: '1 koekje. Je kent de regels. Succes en eet smakelijk voor de gelukkige.',
+    scoreSections: [
+      {
+        rows: [
+          { label: 'Laatste plaats', aura: -500, negative: true },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
     title: 'Boomerang Fu',
     emoji: '🪃',
+    image: 'https://store-images.s-microsoft.com/image/apps.27964.14217927423059510.eac0d219-b30c-4063-879f-17d087c77c3c.df0037f3-78b4-4bfe-a535-5d39d5574d5b',
     description:
       'Gooi boemerangs, ontwijk aanvallen en versla je tegenstanders.',
     scoreSections: [
@@ -115,7 +134,7 @@ export const GAMES: Game[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Karen Round',
     emoji: '💅',
     description:
@@ -128,9 +147,10 @@ export const GAMES: Game[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Stickfight: The Game',
     emoji: '🥊',
+    image: 'https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_StickFightTheGame_image1600w.jpg',
     description:
       'Vecht met stokpoppen en gebruik de omgeving in jouw voordeel. ',
     scoreSections: [
@@ -145,9 +165,10 @@ export const GAMES: Game[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Omegle Challenge',
     emoji: '🎥',
+    image: 'https://gamequitters.com/wp-content/uploads/omegle-app-review-1024x576.jpg',
     description:
       'Per team zijn er 4 één-minuut-challenges en 2 zoveel-mogelijk-challenges. ' +
       'Teams kiezen zelf welke challenges ze doen, en in welke volgorde. ' +
@@ -194,4 +215,3 @@ export const GAMES: Game[] = [
     isFinal: true,
   },
 ];
-

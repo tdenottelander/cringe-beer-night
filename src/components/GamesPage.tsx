@@ -77,7 +77,11 @@ const GameTile = ({
             animate={{ scale: 1, rotate: 0 }}
             className="w-full flex-1 rounded-2xl overflow-hidden shadow-inner bg-zinc-950 min-h-0 flex items-center justify-center"
           >
-            <span className="text-[5rem] leading-none select-none">{game.emoji}</span>
+            {game.image ? (
+              <img src={game.image} alt={game.title} className="w-full h-full object-cover" />
+            ) : (
+              <span className="text-[5rem] leading-none select-none">{game.emoji}</span>
+            )}
           </motion.div>
           {/* Title */}
           <div className="space-y-1">
@@ -149,7 +153,7 @@ const GameDetailModal = ({
       initial={{ scale: 0.9, opacity: 0, y: 40 }}
       animate={{ scale: 1, opacity: 1, y: 0 }}
       exit={{ scale: 0.9, opacity: 0, y: 40 }}
-      className="relative w-full max-w-6xl bg-zinc-950 rounded-[40px] overflow-hidden shadow-2xl flex flex-col md:flex-row border-8 border-pink-900/50"
+      className="relative w-full max-w-6xl max-h-[calc(100vh-2rem)] md:max-h-[calc(100vh-4rem)] bg-zinc-950 rounded-[40px] overflow-hidden shadow-2xl flex flex-col md:flex-row border-8 border-pink-900/50"
     >
       <button
         onClick={onClose}
@@ -160,13 +164,19 @@ const GameDetailModal = ({
 
       {/* Emoji panel */}
       <div
-        className={`w-full md:w-2/5 h-64 md:h-auto relative flex flex-col items-center justify-center gap-4 p-10 ${
+        className={`flex-shrink-0 w-full md:w-2/5 h-64 md:h-auto relative flex flex-col items-center justify-center gap-4 p-10 ${
           game.isFinal
             ? 'bg-gradient-to-br from-pink-950 to-zinc-900'
             : 'bg-gradient-to-br from-zinc-900 to-zinc-950'
         }`}
       >
-        <span className="text-[7rem] leading-none select-none">{game.emoji}</span>
+        <span className="text-[7rem] leading-none select-none">
+          {game.image ? (
+            <img src={game.image} alt={game.title} className="w-48 h-48 object-cover rounded-3xl shadow-2xl" />
+          ) : (
+            game.emoji
+          )}
+        </span>
         <p className="text-[10px] font-black text-pink-400/60 uppercase tracking-[0.3em]">
           {game.isFinal ? 'Eindspel' : `Spel ${game.id}`}
         </p>
@@ -179,7 +189,7 @@ const GameDetailModal = ({
       </div>
 
       {/* Info panel */}
-      <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-start gap-6 overflow-y-auto max-h-[80vh] md:max-h-none">
+      <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-start gap-6 flex-1 min-h-0 overflow-y-auto">
         <div className="space-y-2">
           <motion.p
             initial={{ x: -20, opacity: 0 }}
