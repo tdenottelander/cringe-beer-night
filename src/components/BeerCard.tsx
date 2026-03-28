@@ -4,6 +4,8 @@ import { Beer as BeerIcon, Sparkles } from 'lucide-react';
 import { Beer } from '../types';
 
 export const BeerCard = ({ beer, onReveal }: { beer: Beer; onReveal: (id: number) => void; key?: React.Key }) => {
+  const isMystery = beer.mystery && !beer.revealed;
+
   return (
     <motion.div
       layout
@@ -14,9 +16,19 @@ export const BeerCard = ({ beer, onReveal }: { beer: Beer; onReveal: (id: number
       className={`relative aspect-[3/4] rounded-3xl p-3 cursor-pointer overflow-hidden transition-all duration-500 ${
         beer.revealed
           ? 'bg-zinc-900 shadow-xl border-4 border-pink-900/50'
+          : isMystery
+          ? 'bg-gradient-to-br from-[#1a0035] to-black shadow-2xl border-4 border-purple-700/60'
           : 'bg-black shadow-2xl border-4 border-zinc-900'
       }`}
     >
+      {/* Purple glow for mystery tile */}
+      {isMystery && (
+        <>
+          <div className="absolute inset-0 bg-purple-900/20 blur-xl pointer-events-none" />
+          <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-purple-600/10 to-transparent pointer-events-none" />
+        </>
+      )}
+
       <div className="flex flex-col h-full items-center justify-between text-center gap-2">
         {beer.revealed ? (
           <>
@@ -46,6 +58,29 @@ export const BeerCard = ({ beer, onReveal }: { beer: Beer; onReveal: (id: number
               </div>
             </div>
           </>
+        ) : isMystery ? (
+          <div className="flex-1 flex flex-col items-center justify-center gap-3 relative z-10">
+            <motion.div
+              animate={{ scale: [1, 1.12, 1], opacity: [0.7, 1, 0.7] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+              className="text-6xl leading-none select-none"
+            >
+              ?
+            </motion.div>
+            <p className="text-purple-300/80 font-black uppercase tracking-[0.3em] text-[10px]">
+              ??? Mystery ???
+            </p>
+            <div className="flex gap-1">
+              {[...Array(3)].map((_, i) => (
+                <motion.span
+                  key={i}
+                  animate={{ opacity: [0.2, 1, 0.2] }}
+                  transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.3 }}
+                  className="w-1.5 h-1.5 rounded-full bg-purple-400"
+                />
+              ))}
+            </div>
+          </div>
         ) : (
           <div className="flex-1 flex flex-col items-center justify-center gap-4">
             <div className="relative">
@@ -59,10 +94,12 @@ export const BeerCard = ({ beer, onReveal }: { beer: Beer; onReveal: (id: number
         )}
       </div>
 
-      {!beer.revealed && (
+      {!beer.revealed && !isMystery && (
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+      )}
+      {isMystery && (
+        <div className="absolute inset-0 bg-gradient-to-t from-purple-950/60 to-transparent pointer-events-none" />
       )}
     </motion.div>
   );
 };
-

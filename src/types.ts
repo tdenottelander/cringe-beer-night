@@ -6,6 +6,7 @@ export interface Beer {
   revealed: boolean;
   imageUrl?: string;
   description: string;
+  mystery?: boolean;
 }
 
 export interface Team {

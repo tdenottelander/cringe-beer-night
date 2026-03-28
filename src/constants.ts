@@ -4,6 +4,16 @@ import { Beer } from './types';
 const a = (path: string) => `${(import.meta as any).env?.BASE_URL ?? '/'}${path.replace(/^\//, '')}`;
 
 export const BEERS: Beer[] = [
+  {
+    id: 13,
+    name: "Experimead # 12",
+    brewery: "De Mederie",
+    style: "Bourbon BA Sweet Mead",
+    revealed: false,
+    mystery: true,
+    imageUrl: "https://images.untp.beer/crop?width=640&height=640&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2024_04_04/d674594b20d6cbd66630654ca7e1f677_c_1369197837_raw.jpg",
+    description: "A honey-based sweet mead aged in bourbon barrels by the Dutch meadery De Mederie. Think velvet darkness: rich oak, caramel sweetness and a whiskey warmth that hits different. This isn't a beer — it's a whole vibe.",
+  },
   { 
     id: 1, 
     name: "Hopzz_ Integrity", 
