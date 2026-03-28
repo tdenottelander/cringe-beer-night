@@ -11,7 +11,7 @@ export const AuraTube = ({ team, maxAura, isAdding }: { team: Team; maxAura: num
 
   return (
     <div className="flex flex-col items-center gap-4 h-full relative">
-      <h2 className={`text-2xl font-black ${teamColorClass} drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] uppercase tracking-tighter italic`}>
+      <h2 className={`text-4xl font-black ${teamColorClass} drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)] uppercase tracking-tighter italic`}>
         {team.name}
       </h2>
       <div className="relative w-24 h-[60vh] bg-zinc-900/50 backdrop-blur-md border-4 border-white/10 rounded-full overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)]">
