@@ -20,7 +20,7 @@ export const GekkieGame = ({
   const pickRound = (completed: number[]) => {
     const available = items.filter((item) => !completed.includes(item.id));
     const shuffled = [...available].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 3);
+    return shuffled.slice(0, 6);
   };
 
   // Runs on mount and whenever a reset is triggered
@@ -68,7 +68,7 @@ export const GekkieGame = ({
           Alle gekkies gedaan! 🎉
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {currentRound.map((item) => {
             const isDone = completedIds.includes(item.id);
             return (
